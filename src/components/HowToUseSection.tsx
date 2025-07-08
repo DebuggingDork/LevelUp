@@ -42,7 +42,7 @@ export const HowToUseSection = () => {
     {
       step: "02", 
       title: "Setup API Keys",
-      description: "Configure your preferred AI service (OpenAI, Anthropic, etc.) with secure encrypted storage",
+      description: "Configure your preferred AI service (Gemini API) with secure encrypted storage",
       icon: "🔑",
       color: "from-purple-500 to-pink-500",
       bgColor: "from-purple-500/10 to-pink-500/10",
@@ -173,11 +173,6 @@ export const HowToUseSection = () => {
                   {/* Step Number */}
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-slate-700/60 to-slate-600/60 border border-slate-600/50 backdrop-blur-sm mb-4 group-hover:scale-110 transition-all duration-300">
                     <span className="text-2xl font-black text-white">{step.step}</span>
-                  </div>
-                  
-                  {/* Emoji Icon */}
-                  <div className="text-4xl mb-4 group-hover:scale-110 group-hover:animate-bounce transition-all duration-300">
-                    {step.icon}
                   </div>
                 </div>
                 
