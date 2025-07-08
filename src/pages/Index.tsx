@@ -29,7 +29,7 @@ const Index = () => {
               <a href="#features" className="text-slate-300 hover:text-white transition-colors text-sm">Features</a>
               <a href="#about" className="text-slate-300 hover:text-white transition-colors text-sm">About</a>
               <Link to="/privacy" className="text-slate-300 hover:text-white transition-colors text-sm">Privacy</Link>
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm" onClick={() => window.open('https://chromewebstore.google.com/detail/lflnopkiaaelagblmhpjldhmkmlopcch?utm_source=item-share-cb', '_blank')}>
                 Install Extension
               </Button>
             </div>

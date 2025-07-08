@@ -47,6 +47,13 @@ export const HowToUseSection = () => {
           </p>
           
           <Button 
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-200 mr-4"
+            onClick={() => window.open('https://chromewebstore.google.com/detail/lflnopkiaaelagblmhpjldhmkmlopcch?utm_source=item-share-cb', '_blank')}
+          >
+            <ExternalLink className="w-4 h-4 mr-2" />
+            Install Extension
+          </Button>
+          <Button 
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-200"
             onClick={handleRedirectToGuide}
           >
@@ -60,6 +67,7 @@ export const HowToUseSection = () => {
             <Card 
               key={index} 
               className="bg-slate-900/50 border-slate-800 hover:bg-slate-900/70 transition-all duration-200 cursor-pointer"
+              onClick={step.title === 'Install Extension' ? () => window.open('https://chromewebstore.google.com/detail/lflnopkiaaelagblmhpjldhmkmlopcch?utm_source=item-share-cb', '_blank') : undefined}
             >
               <CardHeader className="text-center pb-4">
                 <div className="text-4xl mb-3">{step.icon}</div>

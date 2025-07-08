@@ -61,7 +61,7 @@ export const HeroSection = () => {
           <Button 
             size="lg" 
             className="bg-white text-slate-900 hover:bg-slate-100 px-8 py-3 rounded-full font-medium transition-all duration-300"
-            onClick={() => window.open('https://level-up-extension-guide-two.vercel.app/', '_blank')}
+            onClick={() => window.open('https://chromewebstore.google.com/detail/lflnopkiaaelagblmhpjldhmkmlopcch?utm_source=item-share-cb', '_blank')}
           >
             <Download className="w-5 h-5 mr-2" />
             Install Extension
